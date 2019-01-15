@@ -5624,7 +5624,7 @@ class FuncInterp(Z3PPObject):
     def __repr__(self):
         return obj_to_string(self)
 
-class ModelRef(Z3PPObject):
+class ModelRef(Z3PPObject, BaseException):
     """Model/Solution of a satisfiability problem (aka system of constraints)."""
 
     def __init__(self, m, ctx):
